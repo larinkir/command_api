@@ -89,7 +89,7 @@ func StopCommand(cmd *exec.Cmd, com *psql.Command) (*ExecCommand, error) {
 	log.Printf("OK: %s. The command %s was successfully stopped.", op, com.Name)
 	return &ExecCommand{Id: com.Id,
 		Name:    com.Name,
-		Message: "The command successfully stopped",
+		Message: "the command successfully stopped",
 	}, nil
 
 }
